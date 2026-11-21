@@ -13,7 +13,7 @@ void fn(lli nm,lli act,lli ps){
     while(pow(n+1,3)<=nm)n++;
  
     fn(nm-pow(n,3),act+pow(n,3),ps+1);
-    if(n-1>0)fn((pow(n,3)-pow(n-1,3))-1,act+pow(n-1,3),ps+1);
+    if(n-1>0)fn(3*n*(n-1),act+pow(n-1,3),ps+1);
 }
  
 void solve(){
